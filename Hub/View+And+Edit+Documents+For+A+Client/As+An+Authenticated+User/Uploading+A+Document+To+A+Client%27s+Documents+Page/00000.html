@@ -54,7 +54,7 @@
     <div class="toolbar__right">
         <a lang="es" data-track-click="intake-language-changed" data-track-attributes-to_locale="es" data-track-attributes_from_locale="en" class="toolbar__item text--small" href="/es/hub/clients/18/documents">Español</a>
         <a class="toolbar__item" href="/en/hub/profile">
-    Welcome <strong class="user__name">Org Lead the 2th</strong>
+    Welcome <strong class="user__name">Org Lead</strong>
 </a>
   <form class="toolbar__item" action="/en/hub/sign_out" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete" />
     <input type="submit" name="commit" value="Sign out" class="button--link" />
@@ -93,7 +93,11 @@
         <h1 class="h1">
           Bart Simpson
         </h1>
-        
+          <span class="urgent-wrapper">
+    <i class="urgent" aria-hidden="true"></i>
+    <span class="sr-only">Needs response</span>
+  </span>
+
         <span class="text--help">#18</span>
 
       </div>
@@ -104,11 +108,12 @@
         <a class="button button--small" href="/en/hub/clients/18/organization">Edit</a>
       </div>
 
-      <div class="text--help">Last client update: 3/8/2021 at 5:05 PM EST</div>
+      <div class="text--help">Last client update: 3/8/2021 at 5:11 PM EST</div>
+        <div class="text--help">Waiting on response since: 3/8/2021 at 5:11 PM EST</div>
 
       <form class="edit_client" id="edit_client_18" action="/en/hub/clients/18/response_needed" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch" />
-        <input value="set" type="hidden" name="client[action]" id="client_action" />
-        <input type="submit" name="commit" value="Mark as response needed" class="button button--small button--subtle" />
+        <input value="clear" type="hidden" name="client[action]" id="client_action" />
+        <input type="submit" name="commit" value="Responded to client" class="button button--small button--subtle" />
 </form>    </div>
 
     <div class="client-header__right">
@@ -268,6 +273,10 @@
         <a id="sort-tax_return" href="/en/hub/clients/18/documents?column=tax_return&amp;order=asc">Tax return </a>
 
       </th>
+      <th class="index-table__header document-column__link">
+        <a id="sort-uploaded_by" href="/en/hub/clients/18/documents?column=uploaded_by&amp;order=asc">Uploaded By </a>
+
+      </th>
       <th scope="col" class="index-table__header document-column__upload-date">
         <a id="sort-created_at" href="/en/hub/clients/18/documents?column=created_at&amp;order=asc">Upload Date </a>
 
@@ -276,32 +285,61 @@
     </tr>
     </thead>
     <tbody>
-        <tr id="document-4" class="index-table__row">
+        <tr id="document-5" class="index-table__row">
           <td class="index-table__cell">Care Provider Statement</td>
           <td class="index-table__cell">
-            <a target="_blank" rel="noopener noreferrer" href="/en/hub/clients/18/documents/4">
+            <a target="_blank" rel="noopener noreferrer" href="/en/hub/clients/18/documents/5">
               W-2.pdf 
 </a>          </td>
           <td class="index-table__cell">
             2019
           </td>
-          <td class="index-table__cell">Mon 3/8/2021 at 5:05 PM EST</td>
+          <td class="index-table__cell">
+            Auto-generated
+          </td>
+          <td class="index-table__cell">
+            Mon 3/8/2021 at 5:11 PM EST
+          </td>
           <td class="index-table__cell edit">
-            <a href="/en/hub/clients/18/documents/4/edit">Edit</a>
+            <a href="/en/hub/clients/18/documents/5/edit">Edit</a>
           </td>
         </tr>
-        <tr id="document-3" class="index-table__row">
+        <tr id="document-4" class="index-table__row">
           <td class="index-table__cell">Care Provider Statement</td>
           <td class="index-table__cell">
-            <a target="_blank" rel="noopener noreferrer" href="/en/hub/clients/18/documents/3">
+            <a target="_blank" rel="noopener noreferrer" href="/en/hub/clients/18/documents/4">
               ID.jpg 
 </a>          </td>
           <td class="index-table__cell">
             2019
           </td>
-          <td class="index-table__cell">Mon 3/8/2021 at 5:05 PM EST</td>
+          <td class="index-table__cell">
+            Client
+          </td>
+          <td class="index-table__cell">
+            Mon 3/8/2021 at 5:11 PM EST
+          </td>
           <td class="index-table__cell edit">
-            <a href="/en/hub/clients/18/documents/3/edit">Edit</a>
+            <a href="/en/hub/clients/18/documents/4/edit">Edit</a>
+          </td>
+        </tr>
+        <tr id="document-6" class="index-table__row">
+          <td class="index-table__cell">Employment tax documents (W2&#39;s, 1099, etc)</td>
+          <td class="index-table__cell">
+            <a target="_blank" rel="noopener noreferrer" href="/en/hub/clients/18/documents/6">
+              consent.pdf 
+</a>          </td>
+          <td class="index-table__cell">
+            
+          </td>
+          <td class="index-table__cell">
+            Auto-generated
+          </td>
+          <td class="index-table__cell">
+            Mon 3/8/2021 at 5:11 PM EST
+          </td>
+          <td class="index-table__cell edit">
+            <a href="/en/hub/clients/18/documents/6/edit">Edit</a>
           </td>
         </tr>
     </tbody>
