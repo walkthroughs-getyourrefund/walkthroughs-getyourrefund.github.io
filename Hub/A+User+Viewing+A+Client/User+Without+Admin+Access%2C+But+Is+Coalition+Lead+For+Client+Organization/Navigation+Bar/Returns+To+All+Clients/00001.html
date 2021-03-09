@@ -199,18 +199,98 @@
       <a class="button" href="/en/hub/clients/new">Add client</a>
     </div>
 
-    No entries found
+    Displaying <b>1</b> entry
     
   </section>
 
   <section class="scrollable-table-wrapper">
+      <table class="index-table client-table">
+        <thead class="index-table__head">
+        <tr class="index-table__row">
+          <th scope="col" class="index-table__header">!<div class="sr-only">Needs response</div></th>
+          <th scope="col" class="index-table__header">
+            <a id="sort-preferred_name" href="/en/hub/clients?column=preferred_name&amp;order=asc">Name </a>
 
-    <div class="slab slab--not-padded">
-      <h1 class="h2">All clients</h1>
-    </div>
-    <div class="empty-clients">
-        No clients assigned.
-    </div>
+          </th>
+          <th scope="col" class="index-table__header">
+            <a id="sort-id" href="/en/hub/clients?column=id&amp;order=asc">Client ID </a>
+
+          </th>
+          <th scope="col" class="index-table__header">Organization</th>
+          <th scope="col" class="index-table__header">
+            <a id="sort-locale" href="/en/hub/clients?column=locale&amp;order=asc">Language </a>
+
+          </th>
+          <th scope="col" class="index-table__header">
+            <a id="sort-updated_at" href="/en/hub/clients?column=updated_at&amp;order=asc">Updated At </a>
+
+          </th>
+          <th scope="col" class="index-table__header">
+            <a id="sort-response_needed_since" href="/en/hub/clients?column=response_needed_since&amp;order=desc">Waiting on response ↓</a>
+
+          </th>
+
+          <th scope="col" class="index-table__header">
+            <a id="sort-primary_consented_to_service_at" href="/en/hub/clients?column=primary_consented_to_service_at&amp;order=asc">Consented at </a>
+
+          </th>
+
+          <th scope="col" class="index-table__header">
+            <a id="sort-state_of_residence" href="/en/hub/clients?column=state_of_residence&amp;order=asc">State </a>
+
+          </th>
+          <th scope="col" class="index-table__header index-table__header-filing_year" style="width: 35%">Filing Year, Assignee, Certification, Status</th>
+        </tr>
+        </thead>
+
+        <tbody class="index-table__body clients-table">
+          <tr id="client-99" class="index-table__row client-row">
+            <td class="index-table__cell client-attribute__needs-response">
+              
+            </td>
+            <th scope="row" class="index-table__row-header client-attribute__name">
+              <a href="/en/hub/clients/99">
+                Name left blank
+</a>            </th>
+            <td class="index-table__cell">99</td>
+            <td class="index-table__cell">Organization 28</td>
+            <td class="index-table__cell">N/A</td>
+            <td class="index-table__cell"><span>Mar 09 5:02 PM</span></td>
+            <td class="index-table__cell"></td>
+
+
+            <td class="index-table__cell">- </td>
+            <td class="index-table__cell"></td>
+            <td class="index-table__cell">
+              
+<ul class="tax-return-list">
+    <li id="tax-return-36">
+      <div class="tax-return-list__assignment">
+        <span class="tax-return-list__year">
+          2019
+          &nbsp;
+        </span>
+        <span class="tax-return-list__service-type"></span><span class ="tax-return-list__assignee">
+            <a class="button button--small" data-remote="true" href="/en/hub/tax_returns/36/edit">
+    Assign
+    <i class="icon-add"></i>
+</a>
+        </span>
+      </div>
+
+      <div class="tax-return-list__certification">
+            <span class="label certification-label label--unassigned">N/A</span>
+      </div>
+
+        <div class="tax-return-list__status label label--status">Intake/Ready for review</div>
+    </li>
+</ul>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </section
 
   </main>
