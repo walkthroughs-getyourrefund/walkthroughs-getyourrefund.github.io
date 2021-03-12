@@ -105,7 +105,7 @@
         <a class="button button--small" href="/en/hub/clients/109/organization">Edit</a>
       </div>
 
-      <div class="text--help">Last client update: 3/12/2021 at 2:13 PM EST</div>
+      <div class="text--help">Last client update: 3/12/2021 at 3:53 PM EST</div>
 
       <form class="edit_client" id="edit_client_109" action="/en/hub/clients/109/response_needed" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch" />
         <input value="set" type="hidden" name="client[action]" id="client_action" />
@@ -115,66 +115,6 @@
     <div class="client-header__right">
       
 <ul class="tax-return-list">
-    <li id="tax-return-41">
-      <div class="tax-return-list__assignment">
-        <div class="tax-return-list__year">
-          2019
-        </div>
-        <div class="tax-return-list__service-type">
-        </div>
-
-        <div class ="tax-return-list__assignee">
-            <a class="button button--small" data-remote="true" href="/en/hub/tax_returns/41/edit">
-    Assign
-    <i class="icon-add"></i>
-</a>
-        </div>
-      </div>
-      <div class="tax-return-list__right">
-        <div class="tax-return-list__certification">
-              <a href="/en/hub/clients/109/notes?tax_return_id=41&amp;update_cert=true">
-                <span class="label certification-label label--unassigned">N/A</span>
-</a>        </div>
-
-          <form class="tax-return-list__status-form form-wrapper" action="/en/hub/clients/109/edit_take_action" accept-charset="UTF-8" method="get">
-            <input value="41" type="hidden" name="tax_return[id]" id="tax_return_id" />
-            <div>
-              <label for=tax_return_status_41>
-                <div class="sr-only">Status</div>
-                <div class="select">
-                  <select name="tax_return[status]" class="select__element" id=tax_return_status_41>
-                    <option value></option>
-                      <optgroup label=Intake></optgroup>
-                        <option value="intake_in_progress" false>&emsp;Not ready</option>
-                        <option value="intake_ready" false>&emsp;Ready for review</option>
-                        <option value="intake_reviewing" false>&emsp;Reviewing</option>
-                        <option value="intake_ready_for_call" false>&emsp;Ready for call</option>
-                        <option value="intake_info_requested" false>&emsp;Info requested</option>
-                        <option value="intake_greeter_info_requested" false>&emsp;Greeter - info requested</option>
-                      <optgroup label=Tax prep></optgroup>
-                        <option value="prep_ready_for_prep" false>&emsp;Ready for prep</option>
-                        <option value="prep_preparing" false>&emsp;Preparing</option>
-                        <option value="prep_info_requested" false>&emsp;Info requested</option>
-                      <optgroup label=Quality review></optgroup>
-                        <option value="review_ready_for_qr" false>&emsp;Ready for QR</option>
-                        <option value="review_reviewing" false>&emsp;Reviewing</option>
-                        <option value="review_ready_for_call" false>&emsp;Ready for call</option>
-                        <option value="review_signature_requested" false>&emsp;Signature requested</option>
-                        <option value="review_info_requested" false>&emsp;Info requested</option>
-                      <optgroup label=Final steps></optgroup>
-                        <option value="file_ready_to_file" false>&emsp;Ready to file</option>
-                        <option value="file_efiled" false>&emsp;E-filed</option>
-                        <option value="file_mailed" false>&emsp;Filed by mail</option>
-                        <option value="file_rejected" false>&emsp;Rejected</option>
-                        <option value="file_accepted" selected>&emsp;Accepted</option>
-                        <option value="file_not_filing" false>&emsp;Not filing</option>
-                  </select>
-                </div>
-              </label>
-            </div>
-            <input type="submit" name="commit" value="Update" class="button" />
-</form>      </div>
-    </li>
     <li id="tax-return-42">
       <div class="tax-return-list__assignment">
         <div class="tax-return-list__year">
@@ -235,6 +175,66 @@
             <input type="submit" name="commit" value="Update" class="button" />
 </form>      </div>
     </li>
+    <li id="tax-return-41">
+      <div class="tax-return-list__assignment">
+        <div class="tax-return-list__year">
+          2019
+        </div>
+        <div class="tax-return-list__service-type">
+        </div>
+
+        <div class ="tax-return-list__assignee">
+            <a class="button button--small" data-remote="true" href="/en/hub/tax_returns/41/edit">
+    Assign
+    <i class="icon-add"></i>
+</a>
+        </div>
+      </div>
+      <div class="tax-return-list__right">
+        <div class="tax-return-list__certification">
+              <a href="/en/hub/clients/109/notes?tax_return_id=41&amp;update_cert=true">
+                <span class="label certification-label label--unassigned">N/A</span>
+</a>        </div>
+
+          <form class="tax-return-list__status-form form-wrapper" action="/en/hub/clients/109/edit_take_action" accept-charset="UTF-8" method="get">
+            <input value="41" type="hidden" name="tax_return[id]" id="tax_return_id" />
+            <div>
+              <label for=tax_return_status_41>
+                <div class="sr-only">Status</div>
+                <div class="select">
+                  <select name="tax_return[status]" class="select__element" id=tax_return_status_41>
+                    <option value></option>
+                      <optgroup label=Intake></optgroup>
+                        <option value="intake_in_progress" false>&emsp;Not ready</option>
+                        <option value="intake_ready" false>&emsp;Ready for review</option>
+                        <option value="intake_reviewing" false>&emsp;Reviewing</option>
+                        <option value="intake_ready_for_call" false>&emsp;Ready for call</option>
+                        <option value="intake_info_requested" false>&emsp;Info requested</option>
+                        <option value="intake_greeter_info_requested" false>&emsp;Greeter - info requested</option>
+                      <optgroup label=Tax prep></optgroup>
+                        <option value="prep_ready_for_prep" false>&emsp;Ready for prep</option>
+                        <option value="prep_preparing" false>&emsp;Preparing</option>
+                        <option value="prep_info_requested" false>&emsp;Info requested</option>
+                      <optgroup label=Quality review></optgroup>
+                        <option value="review_ready_for_qr" false>&emsp;Ready for QR</option>
+                        <option value="review_reviewing" false>&emsp;Reviewing</option>
+                        <option value="review_ready_for_call" false>&emsp;Ready for call</option>
+                        <option value="review_signature_requested" false>&emsp;Signature requested</option>
+                        <option value="review_info_requested" false>&emsp;Info requested</option>
+                      <optgroup label=Final steps></optgroup>
+                        <option value="file_ready_to_file" false>&emsp;Ready to file</option>
+                        <option value="file_efiled" false>&emsp;E-filed</option>
+                        <option value="file_mailed" false>&emsp;Filed by mail</option>
+                        <option value="file_rejected" false>&emsp;Rejected</option>
+                        <option value="file_accepted" selected>&emsp;Accepted</option>
+                        <option value="file_not_filing" false>&emsp;Not filing</option>
+                  </select>
+                </div>
+              </label>
+            </div>
+            <input type="submit" name="commit" value="Update" class="button" />
+</form>      </div>
+    </li>
 </ul>
 
     </div>
@@ -255,7 +255,7 @@
         <li class="message__day-heading">Today 3/12/2021</li>
             <li class="note note--system message" id="last-item">
   <span class="message__time">
-    Fri 3/12/2021 at 2:13 PM EST
+    Fri 3/12/2021 at 3:53 PM EST
   </span>
   <div class="message__body"><span>Example Preparer updated 2019 tax return status from Intake/Not ready to Final steps/Accepted</span></div>
 </li>
