@@ -1,1 +1,0 @@
-./spec/features/hub/roles/site_coordinator_spec.rb
