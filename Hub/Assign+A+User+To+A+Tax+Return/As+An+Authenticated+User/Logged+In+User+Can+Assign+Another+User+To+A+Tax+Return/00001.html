@@ -27,14 +27,14 @@
     
     
 
-    <link rel="stylesheet" media="all" href="/assets/application-a2e184c3426aab4b28b212a3f8c41897f3d8d0c6135dcefbeed60ec248ccfa93.css">
+    <link rel="stylesheet" media="all" href="/assets/application-5bf8e212c23665268f59cecead6f4255bb2063669f7347390bb10e6a9da8f032.css">
 
     <link rel="shortcut icon" type="image/png" href="/assets/checkbox-logo--black-ef44fd73e20340f869f5a0afdc7448f1079c094ad8d0267b753e03e3539ffbb0.png" sizes="57x57">
     <script>
       window.appData = JSON.parse("{\"controller_action\":\"Hub::ClientsController#index\",\"full_path\":\"/en/hub/clients\"}");
       window.mixpanelData = window.appData;
     </script>
-    <script src="/packs-test/js/application-f431911dca5ef53608bc.js"></script>
+    <script src="/packs-test/js/application-faa63be6ecd8cc0dbf72.js"></script>
   </head>
 
   <body class="admin honeycrisp-compact">
@@ -175,6 +175,11 @@
       <input type="checkbox" name="needs_response" id="needs_response" value="true">
       Needs response
     </label>
+
+    <label class="checkbox--gyr">
+      <input type="checkbox" name="unemployment_income" id="unemployment_income" value="true">
+      Received Unemployment Income
+    </label>
   </div>
 
   <div class="actions-wrapper">
@@ -217,6 +222,9 @@
             <a id="sort-locale" href="/en/hub/clients?column=locale&amp;order=asc">Language </a>
 
           </th>
+          <span class="tooltip"><th scope="col" class="index-table__header tooltip__trigger" data-position="bottom" title="" aria-describedby="tooltip-391747" tabindex="0">
+            UI
+          </th><span class="tooltip__body" id="tooltip-391747" role="tooltip" aria-hidden="true">Unemployment Income</span></span>
           <th scope="col" class="index-table__header">
             <a id="sort-updated_at" href="/en/hub/clients?column=updated_at&amp;order=asc">Updated At </a>
 
@@ -251,7 +259,8 @@
             <td class="index-table__cell">1</td>
             <td class="index-table__cell">Organization 1</td>
             <td class="index-table__cell">N/A</td>
-            <td class="index-table__cell"><span>Mar 15 8:45 PM</span></td>
+            <td class="index-table__cell"></td>
+            <td class="index-table__cell"><span>Mar 17 1:56 PM</span></td>
             <td class="index-table__cell"></td>
 
 
@@ -303,12 +312,13 @@
           </tr>
         </tbody>
       </table>
-    </section>
-  
+  </section>
+
+  </main>
 
         <div></div>
 
-    </main></div>
+    </div>
     
     
   
