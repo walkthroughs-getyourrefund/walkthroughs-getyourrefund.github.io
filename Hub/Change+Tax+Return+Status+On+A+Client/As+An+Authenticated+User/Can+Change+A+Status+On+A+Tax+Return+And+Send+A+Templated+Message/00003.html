@@ -31,7 +31,7 @@
     
     
 
-    <link rel="stylesheet" media="all" href="/assets/application-745e5d3a1100994dd05592fc951fd81f3010c4b029b7cb488cd3a3b22bf5327a.css" />
+    <link rel="stylesheet" media="all" href="/assets/application-6d6e8d908adabece8986d06e9d2a7bb8b33b7b81e31f322f4bc5106607b2b435.css" />
 
     <link rel="shortcut icon" type="image/png" href="/assets/checkbox-logo--black-ef44fd73e20340f869f5a0afdc7448f1079c094ad8d0267b753e03e3539ffbb0.png" sizes="57x57" />
     <script>
@@ -106,11 +106,11 @@
         <a class="button button--small" href="/en/hub/clients/111/organization">Edit</a>
       </div>
 
-      <div class="text--help">Last client update: 3/22/2021 at 1:57 PM EDT</div>
+      <div class="text--help">Last client update: 3/22/2021 at 2:04 PM EDT</div>
 
       <form class="edit_client" id="edit_client_111" action="/en/hub/clients/111/response_needed" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch" />
         <input value="set" type="hidden" name="client[action]" id="client_action" />
-        <input type="submit" name="commit" value="Mark as response needed" class="button button--small button--subtle" />
+        <input type="submit" name="commit" value="Mark as response needed" class="button button--small" />
 </form>    </div>
 
     <div class="client-header__right">
@@ -254,31 +254,41 @@
 </section>
 
 
-    <ul class="message-list">
-        <li class="message__day-heading">Today 3/22/2021</li>
-            <li class="note note--system message" id="last-item">
-  <span class="message__time">
-    Mon 3/22/2021 at 1:57 PM EDT
-  </span>
-  <div class="message__body"><span>Example Preparer updated 2019 tax return status from Intake/Not ready to Final steps/Accepted</span></div>
-</li>
+  <div class="slab slab--padded">
+    <div class="client-container">
+      <ul class="day-list">
+            <li class="day-heading">Today 3/22/2021</li>
+              <div class="note system_note" id="last-item">
+  <div class="note__heading">
+    <div class="note__author">
+      
+    </div>
+    <div class="note__time">
+      3/22/2021 2:04 PM EDT
+    </div>
+  </div>
 
-    </ul>
+  <div class="note__body">
+    <p>Example Preparer updated 2019 tax return status from Intake/Not ready to Final steps/Accepted</p>
+  </div>
+</div>
 
-  <div class="slab">
-    <form class="note-form" action="/en/hub/clients/111/notes" accept-charset="UTF-8" method="post">
-      <div class="form-group">
+      </ul>
+    <hr/>
+    <div class="single-input-form">
+      <form class="note-form" action="/en/hub/clients/111/notes" accept-charset="UTF-8" method="post">
+        <div class="form-group">
   <label class="" for="note_body"><p class="form-question">Add a note</p>
 </label><textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="textarea" name="note[body]" id="note_body">
 </textarea>
   
 </div>
 
-      <div>
-        <input type="submit" name="commit" value="Save" class="button" />
-      </div>
-</form>  </div>
-
+        <div>
+          <input type="submit" name="commit" value="Save" class="button" />
+        </div>
+</form>    </div>
+  </div>
 
   
 

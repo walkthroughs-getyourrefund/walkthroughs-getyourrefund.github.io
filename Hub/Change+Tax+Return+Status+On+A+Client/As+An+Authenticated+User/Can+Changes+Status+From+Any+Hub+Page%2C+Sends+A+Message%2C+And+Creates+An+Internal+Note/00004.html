@@ -31,7 +31,7 @@
     
     
 
-    <link rel="stylesheet" media="all" href="/assets/application-745e5d3a1100994dd05592fc951fd81f3010c4b029b7cb488cd3a3b22bf5327a.css" />
+    <link rel="stylesheet" media="all" href="/assets/application-6d6e8d908adabece8986d06e9d2a7bb8b33b7b81e31f322f4bc5106607b2b435.css" />
 
     <link rel="shortcut icon" type="image/png" href="/assets/checkbox-logo--black-ef44fd73e20340f869f5a0afdc7448f1079c094ad8d0267b753e03e3539ffbb0.png" sizes="57x57" />
     <script>
@@ -105,11 +105,11 @@
         <a class="button button--small" href="/en/hub/clients/110/organization">Edit</a>
       </div>
 
-      <div class="text--help">Last client update: 3/22/2021 at 1:57 PM EDT</div>
+      <div class="text--help">Last client update: 3/22/2021 at 2:04 PM EDT</div>
 
       <form class="edit_client" id="edit_client_110" action="/en/hub/clients/110/response_needed" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch" />
         <input value="set" type="hidden" name="client[action]" id="client_action" />
-        <input type="submit" name="commit" value="Mark as response needed" class="button button--small button--subtle" />
+        <input type="submit" name="commit" value="Mark as response needed" class="button button--small" />
 </form>    </div>
 
     <div class="client-header__right">
@@ -252,103 +252,98 @@
   <a class="tab-bar__tab" href="/en/hub/clients/110/notes#last-item">Notes</a>
 </section>
 
-  <div class="hub-section">
-    <h2>Contact History</h2>
-  </div>
-    <ul class="message-list" aria-live="polite" data-js="messages-pub-sub" data-client-id="110">
+  <div class="slab slab--padded">
+    <div class="client-container">
+        <ul class="day-list" aria-live="polite" data-js="messages-pub-sub" data-client-id="110">
 
-        <li class="message__day-heading">Today 3/22/2021</li>
+            <li class="day-heading">Today 3/22/2021</li>
 
-            <!--
+                <!--
   Extending the helpers that we use in this file directly is necessary because we're using ApplicationController.render
   to add new messages to the page as a result of a websocket broadcast
 !-->
-<li class="message message--outgoing_text_message" id="last-item">
-  <div class="message__heading">
-    <div>
-      <span class="message__author">
-        Example Preparer
-      </span>
+<li class="message message--outgoing_text_message" id=last-item>
+  <div class="message__content">
+    <div class="message__heading">
+      <div class="message__authority">
+        <div class="message__author">
+          Example Preparer
+        </div>
 
-      <span class="message__phone_number">
-        Text to (415) 555-1212
-      </span>
+        <div class="message__contact-info">
+          to (415) 555-1212
+        </div>
 
-        <span class="message__status">
-          sending...
-        </span>
-
+        <img alt="sending" title="sending" class="message__status" src="/assets/icons/waiting-3502221013405e49dac7880d313ceb3cd2f45a141876d83b83948d18af4f78fe.svg" />
+      </div>
     </div>
 
-    <div>
-      <span class="message__time">
-        Mon 3/22/2021 at 1:57 PM EDT
-      </span>
+    <div class="message__body">
+      <div class="message__time">
+        3/22/2021 2:04 PM EDT
+      </div>
+      <p>Heads up! I am still working on it.</p>
+
+
     </div>
-  </div>
-
-  <div class="message__body">
-        <div>Heads up! I am still working on it.</div>
-
-
-
   </div>
 </li>
 
-       
-
-    </ul>
-
-  <div class="slab" id="composer">
-    <div class="communication-preferences">
-        Client has opted in to contact by:
-        <ul class="with-bullets">
-            <li>Text Message</li>
-            <li>Email</li>
         </ul>
-    </div>
 
+      <hr/>
+      <div class="communication-preferences">
+           has opted in to contact by:
+          <ul class="with-bullets">
+              <li>Text Message</li>
+              <li>Email</li>
+          </ul>
+      </div>
 
-      <form class="text-message-form" action="/en/hub/clients/110/outgoing_text_messages?client=110" accept-charset="UTF-8" method="post">
-        <div class="form-group">
+        <div class="single-input-form">
+          <form class="text-message-form" action="/en/hub/clients/110/outgoing_text_messages?client=110" accept-charset="UTF-8" method="post">
+            <div class="form-group">
   <label class="" for="outgoing_text_message_body"><p class="form-question">Send a text message</p>
 </label><textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="textarea" name="outgoing_text_message[body]" id="outgoing_text_message_body">
 </textarea>
   
 </div>
 
-        <input type="hidden" value="110" name="outgoing_text_message[client_id]" id="outgoing_text_message_client_id" />
-        <div>
-          <input type="submit" name="commit" value="Send" class="button" />
-        </div>
-</form>
-      <form class="email-form" enctype="multipart/form-data" action="/en/hub/clients/110/outgoing_emails?client=110" accept-charset="UTF-8" method="post">
-        <div class="form-group">
+            <input type="hidden" value="110" name="outgoing_text_message[client_id]" id="outgoing_text_message_client_id" />
+            <div>
+              <input type="submit" name="commit" value="Send" class="button" />
+            </div>
+</form>        </div>
+
+        <div class="single-input-form spacing-above-25">
+          <form class="email-form" enctype="multipart/form-data" action="/en/hub/clients/110/outgoing_emails?client=110" accept-charset="UTF-8" method="post">
+            <div class="form-group">
   <label class="" for="outgoing_email_body"><p class="form-question">Send an email</p>
 </label><textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="textarea" name="outgoing_email[body]" id="outgoing_email_body">
 </textarea>
   
 </div>
 
-        <input type="hidden" value="110" name="outgoing_email[client_id]" id="outgoing_email_client_id" />
-        <div class="attachment-uploader">
-          <div class="form-group">
+            <input type="hidden" value="110" name="outgoing_email[client_id]" id="outgoing_email_client_id" />
+            <div class="attachment-uploader">
+              <div class="form-group">
   <label for="outgoing_email_attachment"><p class="form-question">Attachment</p>
 <input class="attachment-upload file-input" id="outgoing_email_attachment" type="file" name="outgoing_email[attachment]" /></label>
   
 </div>
 
-          <div id="attachment-image-preview-wrapper">
-            <img id="attachment-image-preview" alt="" src="/assets/file-icon-4548dbe3a11c387c73a690164b1991a6dfa19de340b79ce9596aac847895e9fa.svg" />
-          </div>
-          <button id="attachment-image-clear" hidden>Remove Attachment</button>
+              <div id="attachment-image-preview-wrapper">
+                <img id="attachment-image-preview" alt="" src="/assets/file-icon-4548dbe3a11c387c73a690164b1991a6dfa19de340b79ce9596aac847895e9fa.svg" />
+              </div>
+              <button id="attachment-image-clear" hidden>Remove Attachment</button>
+            </div>
+            <div>
+              <input type="submit" name="commit" value="Send" class="button" />
+            </div>
+</form>        </div>
 
-        </div>
-        <div>
-          <input type="submit" name="commit" value="Send" class="button" />
-        </div>
-</form>  </div>
-
+    </div>
+  </div>
   
 
   </main>
