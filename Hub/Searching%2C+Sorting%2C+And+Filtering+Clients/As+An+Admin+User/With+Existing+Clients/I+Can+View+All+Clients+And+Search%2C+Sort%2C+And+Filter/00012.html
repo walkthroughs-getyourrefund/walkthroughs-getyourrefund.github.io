@@ -35,7 +35,7 @@
 
     <link rel="shortcut icon" type="image/png" href="/assets/checkbox-logo--black-ef44fd73e20340f869f5a0afdc7448f1079c094ad8d0267b753e03e3539ffbb0.png" sizes="57x57" />
     <script>
-      window.appData = JSON.parse("{\"controller_action\":\"Hub::ClientsController#index\",\"full_path\":\"/en/hub/clients?order=asc&column=response_needed_since&status=&year=&vita_partner_id=&assigned_user_id=9&language=&search=\"}");
+      window.appData = JSON.parse("{\"controller_action\":\"Hub::ClientsController#index\",\"full_path\":\"/en/hub/clients?order=asc&column=response_needed_since&status=&year=&vita_partner_id=&assigned_user_id=9&language=&service_type=&search=\"}");
       window.mixpanelData = window.appData;
     </script>
     <script src="/packs-test/js/application-faa63be6ecd8cc0dbf72.js"></script>
@@ -52,7 +52,7 @@
 </a>      </div>
     </div>
     <div class="toolbar__right">
-        <a lang="es" data-track-click="intake-language-changed" data-track-attributes-to_locale="es" data-track-attributes_from_locale="en" class="toolbar__item text--small" href="/es/hub/clients?assigned_user_id=9&amp;column=response_needed_since&amp;language=&amp;order=asc&amp;search=&amp;status=&amp;vita_partner_id=&amp;year=">Español</a>
+        <a lang="es" data-track-click="intake-language-changed" data-track-attributes-to_locale="es" data-track-attributes_from_locale="en" class="toolbar__item text--small" href="/es/hub/clients?assigned_user_id=9&amp;column=response_needed_since&amp;language=&amp;order=asc&amp;search=&amp;service_type=&amp;status=&amp;vita_partner_id=&amp;year=">Español</a>
         <a class="toolbar__item" href="/en/hub/profile">
     Welcome <strong class="user__name">Admin the 2th</strong>
 </a>
@@ -182,6 +182,14 @@
 <option value="es">Spanish</option></select>
       </div>
     </div>
+
+    <div class="form-group">
+      <label for="service_type" class="form-question">Service type</label>
+      <div class="select">
+        <select name="service_type" id="service_type" class="select__element"><option value="" label=" "></option><option value="drop_off">Drop Off</option>
+<option value="online_intake">Online</option></select>
+      </div>
+    </div>
     <div class="search-wrapper form-group" role="search">
       <label for="search" class="form-question">
         Search
@@ -205,11 +213,6 @@
     <label class="checkbox--gyr">
       <input type="checkbox" name="needs_response" id="needs_response" value="true" />
       Needs response
-    </label>
-
-    <label class="checkbox--gyr">
-      <input type="checkbox" name="exclude_dropoffs" id="exclude_dropoffs" value="true" />
-      Exclude dropoffs
     </label>
     
     <label class="checkbox--gyr">
@@ -296,11 +299,11 @@
             <td class="index-table__cell">None</td>
             <td class="index-table__cell">N/A</td>
             <td class="index-table__cell"></td>
-            <td class="index-table__cell"><span>Mar 22 9:39 AM</span></td>
+            <td class="index-table__cell"><span>Mar 22 12:37 PM</span></td>
             <td class="index-table__cell"></td>
 
 
-            <td class="index-table__cell"><span>Mar 20 9:39 AM</span> </td>
+            <td class="index-table__cell"><span>Mar 20 12:37 PM</span> </td>
             <td class="index-table__cell">TX</td>
             <td class="index-table__cell">
               
