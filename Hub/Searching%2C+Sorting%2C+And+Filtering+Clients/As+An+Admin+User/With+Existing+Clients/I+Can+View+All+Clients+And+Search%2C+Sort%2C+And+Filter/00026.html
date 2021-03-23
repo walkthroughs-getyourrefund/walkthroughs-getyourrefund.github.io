@@ -31,7 +31,7 @@
     
     
 
-    <link rel="stylesheet" media="all" href="/assets/application-4538296f6344d209a1233a998d746046571259f2c6c5a248b4b6ff7d81211fb9.css" />
+    <link rel="stylesheet" media="all" href="/assets/application-2cbce45ee84b632a52bb4cea2f9b40b5f0b1529db2c7258866706fd8d4e12b04.css" />
 
     <link rel="shortcut icon" type="image/png" href="/assets/checkbox-logo--black-ef44fd73e20340f869f5a0afdc7448f1079c094ad8d0267b753e03e3539ffbb0.png" sizes="57x57" />
     <script>
@@ -80,12 +80,7 @@
       </div>
 
         <main role="main">
-      <section class="slab slab--padded client-index-header">
-    <div class="user-header">
-  <p class="spacing-below-25">Welcome, <a href="/en/hub/profile"><strong>Admin the 2th</strong></a></p>
-</div>
-  </section>
-  <div class="client-navigation tab-bar is-selected">
+      <div class="client-navigation tab-bar is-selected">
   <a class="tab-bar__tab" href="/en/hub">Assigned clients</a>
   <a class="tab-bar__tab is-selected" href="/en/hub/clients">All clients</a>
   <a class="tab-bar__tab" href="/en/hub/clients/sla-breaches">Urgent</a>
@@ -242,71 +237,105 @@
       </div>
     </div>
   </section>
-
   <section class="scrollable-table-wrapper">
-      <table class="index-table client-table">
-        <thead class="index-table__head">
-        <tr class="index-table__row">
-          <th scope="col" class="index-table__header">!<div class="sr-only">Needs response</div></th>
-          <th scope="col" class="index-table__header">
-            <a id="sort-preferred_name" href="/en/hub/clients?column=preferred_name&amp;order=asc&amp;status=prep_ready_for_prep">Name </a>
-
-          </th>
-          <th scope="col" class="index-table__header">
-            <a id="sort-id" href="/en/hub/clients?column=id&amp;order=desc&amp;status=prep_ready_for_prep">Client ID ↓</a>
-
-          </th>
-          <th scope="col" class="index-table__header">Organization</th>
-          <th scope="col" class="index-table__header">
-            <a id="sort-locale" href="/en/hub/clients?column=locale&amp;order=asc&amp;status=prep_ready_for_prep">Language </a>
-
-          </th>
-          <th scope="col" class="index-table__header tooltip" data-position="bottom" title="Unemployment Income">
-            UI
-          </th>
-          <th scope="col" class="index-table__header">
-            <a id="sort-updated_at" href="/en/hub/clients?column=updated_at&amp;order=asc&amp;status=prep_ready_for_prep">Updated At </a>
-
-          </th>
-          <th scope="col" class="index-table__header">
-            <a id="sort-response_needed_since" href="/en/hub/clients?column=response_needed_since&amp;order=asc&amp;status=prep_ready_for_prep">Waiting on response </a>
-
-          </th>
-
-          <th scope="col" class="index-table__header">
-            <a id="sort-primary_consented_to_service_at" href="/en/hub/clients?column=primary_consented_to_service_at&amp;order=asc&amp;status=prep_ready_for_prep">Consented at </a>
-
-          </th>
-
-          <th scope="col" class="index-table__header">
-            <a id="sort-state_of_residence" href="/en/hub/clients?column=state_of_residence&amp;order=asc&amp;status=prep_ready_for_prep">State </a>
-
-          </th>
-          <th scope="col" class="index-table__header index-table__header-filing_year" style="width: 35%">Filing Year, Assignee, Certification, Status</th>
-        </tr>
-        </thead>
-
-        <tbody class="index-table__body clients-table">
-          <tr id="client-10" class="index-table__row client-row">
-            <td class="index-table__cell client-attribute__needs-response">
+        <table class="index-table client-table">
+          <thead class="index-table__head">
+            <tr class="index-table__row">
+            <th scope="col" class="index-table__header">!<div class="sr-only">Needs response</div></th>
+            <th scope="col" class="index-table__header">
               
-            </td>
-            <th scope="row" class="index-table__row-header client-attribute__name">
-              <a href="/en/hub/clients/10">
-                Patty Banana
-</a>            </th>
-            <td class="index-table__cell">10</td>
-            <td class="index-table__cell">None</td>
-            <td class="index-table__cell">N/A</td>
-            <td class="index-table__cell"></td>
-            <td class="index-table__cell"><span>Mar 22 4:35 PM</span></td>
-            <td class="index-table__cell"></td>
+<a id="sort-preferred_name" class="sortable-column-link" href="/en/hub/clients?column=preferred_name&amp;order=asc&amp;status=prep_ready_for_prep">
+      <span>Name</span><img alt="" class="sort-arrow" src="/assets/icons/arrow_stacked-bf327313ddc8e8dc19e151c36c8189a105f7cc14a639357c8c3cb6be23cbc76d.svg" />
+</a>
 
 
-            <td class="index-table__cell"><span>Mar 21 4:35 PM</span> </td>
-            <td class="index-table__cell">AL</td>
-            <td class="index-table__cell">
+
+            </th>
+            <th scope="col" class="index-table__header">
               
+<a id="sort-id" class="sortable-column-link" href="/en/hub/clients?column=id&amp;order=desc&amp;status=prep_ready_for_prep">
+      <span>Client ID</span><img alt="" class="sort-arrow" src="/assets/icons/arrow_up-17fe8e82e2ba124757f61cb1defe5ea8ef82786bb5439b9e8499fbdbf1c3736d.svg" />
+</a>
+
+
+
+            </th>
+            <th scope="col" class="index-table__header">Organization</th>
+            <th scope="col" class="index-table__header">
+              
+<a id="sort-locale" class="sortable-column-link" href="/en/hub/clients?column=locale&amp;order=asc&amp;status=prep_ready_for_prep">
+      <span>Language</span><img alt="" class="sort-arrow" src="/assets/icons/arrow_stacked-bf327313ddc8e8dc19e151c36c8189a105f7cc14a639357c8c3cb6be23cbc76d.svg" />
+</a>
+
+
+
+            </th>
+            <th scope="col" class="index-table__header tooltip" data-position="bottom" title="Unemployment Income">
+              UI
+            </th>
+            <th scope="col" class="index-table__header">
+              
+<a id="sort-updated_at" class="sortable-column-link" href="/en/hub/clients?column=updated_at&amp;order=asc&amp;status=prep_ready_for_prep">
+      <span>Updated At</span><img alt="" class="sort-arrow" src="/assets/icons/arrow_stacked-bf327313ddc8e8dc19e151c36c8189a105f7cc14a639357c8c3cb6be23cbc76d.svg" />
+</a>
+
+
+
+            </th>
+            <th scope="col" class="index-table__header">
+              
+<a id="sort-response_needed_since" class="sortable-column-link" href="/en/hub/clients?column=response_needed_since&amp;order=asc&amp;status=prep_ready_for_prep">
+      <span>Waiting on response</span><img alt="" class="sort-arrow" src="/assets/icons/arrow_stacked-bf327313ddc8e8dc19e151c36c8189a105f7cc14a639357c8c3cb6be23cbc76d.svg" />
+</a>
+
+
+
+            </th>
+
+            <th scope="col" class="index-table__header">
+              
+<a id="sort-primary_consented_to_service_at" class="sortable-column-link" href="/en/hub/clients?column=primary_consented_to_service_at&amp;order=asc&amp;status=prep_ready_for_prep">
+      <span>Consented at</span><img alt="" class="sort-arrow" src="/assets/icons/arrow_stacked-bf327313ddc8e8dc19e151c36c8189a105f7cc14a639357c8c3cb6be23cbc76d.svg" />
+</a>
+
+
+
+            </th>
+
+            <th scope="col" class="index-table__header">
+              
+<a id="sort-state_of_residence" class="sortable-column-link" href="/en/hub/clients?column=state_of_residence&amp;order=asc&amp;status=prep_ready_for_prep">
+      <span>State</span><img alt="" class="sort-arrow" src="/assets/icons/arrow_stacked-bf327313ddc8e8dc19e151c36c8189a105f7cc14a639357c8c3cb6be23cbc76d.svg" />
+</a>
+
+
+
+            </th>
+            <th scope="col" class="index-table__header index-table__header-filing_year" style="width: 35%">Filing Year, Assignee, Certification, Status</th>
+          </tr>
+          </thead>
+
+          <tbody class="index-table__body clients-table">
+            <tr id="client-10" class="index-table__row client-row">
+              <td class="index-table__cell client-attribute__needs-response">
+                
+              </td>
+              <th scope="row" class="index-table__row-header client-attribute__name">
+                <a href="/en/hub/clients/10">
+                  Patty Banana
+</a>              </th>
+              <td class="index-table__cell">10</td>
+              <td class="index-table__cell">None</td>
+              <td class="index-table__cell">N/A</td>
+              <td class="index-table__cell"></td>
+              <td class="index-table__cell"><span>Mar 22 8:16 PM</span></td>
+              <td class="index-table__cell"></td>
+
+
+              <td class="index-table__cell"><span>Mar 21 8:16 PM</span> </td>
+              <td class="index-table__cell">AL</td>
+              <td class="index-table__cell">
+                
 <ul class="tax-return-list">
     <li id="tax-return-4">
       <div class="tax-return-list__assignment">
@@ -334,10 +363,10 @@
     </li>
 </ul>
 
-            </td>
-          </tr>
-        </tbody>
-      </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
   </section>
 
   </main>
